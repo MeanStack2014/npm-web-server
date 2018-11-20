@@ -49,6 +49,11 @@ app.get('/contact',(req,res)=>{
         pageTitle: 'Contact Us'
     })
 });
+app.get('/project',(req,res)=>{
+    res.render("project.hbs",{
+        pageTitle: 'Project'
+    })
+});
 app.listen(port,()=>{
     console.log(`Server is up on Port ${port}`);
 });
